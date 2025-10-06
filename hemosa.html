@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tortilla de verduras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFC2C2;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #FF7575;
+      color: #BA1A1A;
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    nav .logo::before {
+      content: "🩹";
+      margin-right: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #dcedc8;
+    }
+
+    /* CONTENIDO DE RECETA */
+    .receta-contenido {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      flex: 1;
+    }
+
+    .receta-contenido img {
+      width: 45%;
+      max-width: 400px;
+      max-height: 400px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .receta-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .recuadro {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .recuadro h2 {
+      margin-top: 0;
+      color: #BA1A1A;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .receta-contenido {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .receta-contenido img {
+        width: 100%;
+        max-height: 300px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Loncheras Saludables</div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="recetas1.html">Consejos</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO DE LA RECETA -->
+  <main class="receta-contenido">
+    <img src="img/recetas/hemosa.jpg" alt="tortilla" />
+
+    <div class="receta-info">
+      <div class="recuadro">
+        <h2>Que hacer:</h2>
+        <ul>
+          <li>Presionar la herida con una gasa o tela limpia.</li>
+          <li>Mantener la presión hasta detener el sangrado</li>
+          <li>Elevar la zona afectada (si es posible).</li>
+          <li>Buscar atención médica inmediata.</li>
+        </ul>
+      </div>
+      <div class="recuadro">
+        <h2>Que no hacer:</h2>
+        <p>
+          Retirar objetos incrustados.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Sistema Interactivo para Padres - Desarrollado por NutriKit</p>
+  </footer>
+
+</body>
+</html>

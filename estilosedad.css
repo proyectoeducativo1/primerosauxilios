@@ -1,0 +1,187 @@
+/* General */
+body { 
+  font-family: 'Segoe UI', sans-serif; 
+  background: #FFC2C2; 
+  margin: 0; 
+  padding: 0; /* Se elimina padding global para no afectar la navbar */
+  color: #333;
+}
+
+/* Contenedor principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Padding solo en el contenido principal */
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background: #FF7575;
+  color: #BA1A1A;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+nav .logo::before {
+  content: "🩹";
+  margin-right: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #dcedc8;
+}
+
+/* Título principal */
+h1 { 
+  text-align: center; 
+  font-size: 28px; 
+  color: #2c3e50; 
+  margin-bottom: 40px; 
+}
+
+/* Formulario */
+.formulario { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+  width: 100%; 
+  max-width: 420px; 
+  background-color: #ffffff; 
+  padding: 24px 32px; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); 
+  margin-bottom: 40px; 
+}
+
+.formulario label { 
+  font-size: 16px; 
+  font-weight: 600; 
+  color: #2c3e50; 
+}
+
+.formulario input { 
+  padding: 12px 14px; 
+  font-size: 16px; 
+  border: 1px solid #d0d5dd; 
+  border-radius: 10px; 
+  outline: none; 
+  transition: border-color 0.2s, box-shadow 0.2s; 
+}
+
+.formulario input:focus { 
+  border-color: #3498db; 
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); 
+}
+
+.formulario button { 
+  align-self: flex-end; 
+  padding: 12px 20px; 
+  background-color: #BA1A1A; 
+  color: #fff; 
+  border: none; 
+  border-radius: 10px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+.formulario button:hover { 
+  background-color: #2980b9; 
+  transform: translateY(-2px); 
+}
+
+/* Tarjetas */
+.card { 
+  background-color: white; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  margin: 20px auto; 
+  max-width: 700px; 
+  transition: transform 0.2s; 
+}
+
+.card:hover { 
+  transform: translateY(-5px); 
+}
+
+.card img { 
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+.card-content { 
+  padding: 20px; 
+}
+
+.card h3 { 
+  margin-top: 0; 
+  font-size: 20px; 
+  color: #2c3e50; 
+}
+
+.card p { 
+  font-size: 16px; 
+  color: #555; 
+  margin-bottom: 20px; 
+}
+
+.card a { 
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #BA1A1A; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  transition: background-color 0.3s; 
+}
+
+.card a:hover { 
+  background-color: #2980b9; 
+}
+
+/* Galería de recetas */
+.receta-galeria { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+  gap: 24px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding-bottom: 40px; 
+}
+
+/* Responsive */
+@media (max-width: 480px) { 
+  .formulario { 
+    padding: 20px 24px; 
+  } 
+}

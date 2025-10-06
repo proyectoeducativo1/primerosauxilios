@@ -1,0 +1,117 @@
+/* Reset y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cuerpo general */
+body {
+  background-color: #f6fdf6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Sección de introducción */
+.introduccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: #FF7575;
+  flex-wrap: wrap;
+}
+
+.intro-texto {
+  flex: 1 1 400px;
+  padding-right: 40px;
+}
+
+.intro-texto h1 {
+  font-size: 3rem;
+  color: #BA1A1A;
+  margin-bottom: 10px;
+}
+
+.intro-texto hr {
+  border: 1px solid #BA1A1A;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.intro-texto p {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.intro-imagen {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.intro-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Contenedor de tarjetas */
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+  background-color: #ffffff;
+}
+
+/* Tarjeta como enlace */
+a.tarjeta {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a.tarjeta:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarjeta */
+.tarjeta {
+  background-color: #FF7575;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.tarjeta img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+  font-size: 1.4rem;
+  color: #BA1A1A;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #FF7575;
+  color: #BA1A1A;
+  font-size: 0.9rem;
+}
